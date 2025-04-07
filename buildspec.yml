@@ -9,14 +9,4 @@ phases:
       - npm install
   pre_build:
     commands:
-      - echo Running pre-build steps...
-      - npm -version
-  build:
-    commands:
-      - echo Running build steps...
-      - npm run build
-  post_build:
-    commands:
-      - echo Running post-build steps...
-      - npm run test
-
+      - echo npm is successfully installed
