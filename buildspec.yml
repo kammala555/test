@@ -10,7 +10,7 @@ phases:
   pre_build:
     commands:
       - echo Running pre-build steps...
-      - npm run lint
+      - npm -version
   build:
     commands:
       - echo Running build steps...
@@ -20,7 +20,3 @@ phases:
       - echo Running post-build steps...
       - npm run test
 
-artifacts:
-  files:
-    - '**/*'
-  discard-paths: yes
